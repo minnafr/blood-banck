@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <title>Service</title>
+</head>
+<body>
+    <div class="left-panel">
+
+        <div class="tableau" id="tableau">      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M3 3v18h18v-2H5V3H3zm4 8h2v7H7v-7zm4-5h2v12h-2V6zm4 3h2v9h-2V9z"/></svg>
+        <div class="tableau" id="tableau" style="text-decoration: underline; color:white;">      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M3 3v18h18v-2H5V3H3zm4 8h2v7H7v-7zm4-5h2v12h-2V6zm4 3h2v9h-2V9z"/></svg>
+          Tableau de bord</div>
+    <div class="statistiques" id="statistiques">      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2V4h-2v13zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2z"/></svg>
+      Les statistiques</div>
+          <path d="M10 17l5-5-5-5v3H0v4h10v3zm12 4H12v-2h10V5H12V3h10c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2z"/>
+        </svg> Déconnexion</button>
+
+   
+
+    </div>
+
+   <div class="right-panel-tableau" id="right-panel-tableau" style="display: none;">
+   <div class="right-panel-tableau" id="right-panel-tableau" style="display: block;">
+        <h1> Banque De Sang</h1>
+        <div class="card">
+            <div class="stock" id="stock">
+                <div ><strong style="text-decoration: underline;">In stock</strong>
+                    <br><br>
+                    <div class="total"><strong>Total:</strong><span id="totalStock">0</span></div>
+                </div>
+
+                <div class="format"></div>
+            </div>
+            <div class="distribution" id="distribution">
+                <div ><strong style="text-decoration: underline;">Distribution</strong>
+                    <br><br>
+                    <div class="total" ><strong>Total:</strong><span id="totalDistribution">0</span></div>
+                </div>
+
+                <div class="format" ></div>
+            </div>
+        </div>
+        <div class="alerts">
+            <h3 id="Alertes">Les Alertes</h3>
+
+            <button id="showMoreAlerts" class="btn-show-more">Afficher plus</button>
+        </div>
+
+   </div>
+    <div class="right-panel-statistiques" id="right-panel-statistiques" style="display: none;">
+        <h1>Banque De Sang</h1>
+        <div class="stats-boxes">
+            <span class="first">
+            <div class="box1">Total poches de sang<br><br>🩸<strong class="totalPoCheSang" id="totalPoCheSang">0</strong></div>
+            <div class="box2">Total distribution<br><br>🩸<strong class="totalDistribution" id="totalDistribution">0</strong></div>
+            <div class="box3">Total poches expiré<br><br>🩸<strong class="totalExpire" id="totalExpire">0</strong></div>
+        </span>
+        <span class="second">
+            <div class="box4">Total CPS poches<br><br>🩸<strong class="totalCps" id="totalCps">0</strong></div>
+            <div class="box5">Total CG poches<br><br>🩸<strong class="totalCg" id="totalCg">0</strong></div>
+            <div class="box6">Total PFC poches<br><br>🩸<strong class="totalPfc" id="totalPfc">0</strong></div>
+        </span>
+          </div>
+    </div>
+    <div class="right-panel-management" id="right-panel-management" style="display: none;">
+        <h1>Banque De Sang</h1>
+        <div>
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" placeholder="Nom"/>
+              <span class="icon-right">👤</span>
+            </div>
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" placeholder="Prénom"/>
+              <span class="icon-right">👤</span>
+            </div>
+            <div class="form-group">
+              <label>Nom d'utilisateur</label>
+              <input type="text" placeholder="Nom d'utilisateur"/>
+              <span class="icon-right">👤</span>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="Entrer votre email"/>
+              <span class="icon-right">✉️</span>
+            </div>
+            <div class="form-group">
+              <label>Mot de passe</label>
+              <input type="password" placeholder="Entrer le mot de passe"/>
+              <span class="icon-right">🔒</span>
+            </div>
+            <button class="creer">S'inscrire</button>
+          </div>
+    </div>
+    <div class="compteBio" id="compteBio" style="display: none;">
+        <h1>Banque De Sang</h1>
+        <section class="TablesCompte" id="TablesCompte">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Biologiste ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Actif</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableauBiologiste">
+
+
+                </tbody>
+              </table>
+        </section>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
